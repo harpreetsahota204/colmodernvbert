@@ -1,0 +1,32 @@
+{
+    "name": "colmodernvbert",
+    "url": "https://github.com/harpreetsahota204/bimodernvbert",
+    "models": [
+        {
+            "base_name": "ModernVBERT/colmodernvbert",
+            "base_filename":"colmodernvbert",
+            "author": "Paul Teiletche, et. al",
+            "license": "MIT",
+            "source": "https://huggingface.co/ModernVBERT/colmodernvbert",
+            "description": "The ModernVBERT suite is a suite of compact 250M-parameter vision-language encoders. ColModernVBERT is the late-interaction version that is fine-tuned for visual document retrieval tasks, the most performant model on this task.",
+            "tags": [
+                "classification",
+                "logits",
+                "embeddings",
+                "torch",
+                "visual-document-retrieval",
+                "zero-shot"
+            ],
+            "date_added": "2025-10-17",
+            "requirements": {
+                "packages": ["huggingface-hub","transformers", "torch", "torchvision",  "colpali-engine"],
+                "cpu": {
+                    "support": true
+                },
+                "gpu": {
+                    "support": true
+                }
+            }
+        }
+   ]
+}
