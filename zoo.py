@@ -153,6 +153,9 @@ class ColModernVBertModel(fout.TorchImageModel, fom.PromptMixin):
         
         logger.info(f"Loading ColModernVBert model from {config.model_path}")
         
+        # Enable TF32 for faster matmul on Ampere+ GPUs
+        torch.set_float32_matmul_precision('high')
+        
         model_kwargs = {
             "device_map": self.device,
         }
