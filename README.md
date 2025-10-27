@@ -2,6 +2,8 @@
 
 Integration of [ColModernVBert](https://huggingface.co/ModernVBERT/colmodernvbert) as a FiftyOne Zoo Model for fine-grained multimodal document retrieval and zero-shot classification.
 
+![image](colmodernvbert_fo.gif)
+
 ## Overview
 
 [ColModernVBert](https://huggingface.co/ModernVBERT/colmodernvbert) is a multi-vector vision-language model built on the ModernVBert architecture that generates ColBERT-style embeddings for both images and text. Unlike single-vector models that compress entire images into a single representation, ColModernVBert produces multiple 128-dimensional vectors per input, enabling fine-grained matching between specific image regions and text tokens.
